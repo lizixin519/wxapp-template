@@ -1,3 +1,8 @@
+/*
+ * @name: 
+ * @msg: 
+ * @param: 
+ */
 const {
   src,
   dest,
@@ -8,8 +13,8 @@ const {
 } = require('gulp')
 const less = require('gulp-less');
 const rename = require('gulp-rename');
-const del = require('del');
 const imagemin = require('gulp-imagemin');
+const del = require('del');
 const path = require('path');
 const eslint = require('gulp-eslint');
 const srcPath = './src/**';
@@ -67,4 +72,3 @@ function clean() {
 
 exports.build = series(clean, parallel(wxml, js, json, wxss, image))
 exports.dev = series(clean, parallel(wxml, js, json, wxss, image), watchDev)
-// exports.dev = series(clean, wxss)

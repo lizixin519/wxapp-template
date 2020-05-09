@@ -1,7 +1,7 @@
 /*
  * @name: env
  * @msg: 环境变量
- * @param: 
+ * @param:
  */
 
  export default {
